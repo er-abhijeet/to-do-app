@@ -1,6 +1,6 @@
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML**: For structuring the application.
 - **CSS**: For designing a user-friendly and responsive interface.
