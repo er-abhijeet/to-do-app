@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(35deg,#E3A5C7,#3DC2EC);
+}
+.app{
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 540px;
+    padding: 40px;
+    min-height: 150px;
+}
+
+.app h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.app h1 img{
+    margin-right: 20px;
+    width: 3rem;
+    height: 3rem;
+}
+.app .form{
+    position: relative;
+    height: 80px;
+}
+
+#input-box{
+    width: 96%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(230, 230, 230);
+    padding-left: 20px;
+    position: absolute;
+    font-size: 16px;    
+    outline: none;
+}
+
+.app button{
+    height: 50px;
+    width: 80px;
+    border: none;
+    border-radius: 25px;
+    background-color: orangered;
+    position: absolute;
+    right: 0px;
+}
+.app button:hover{
+    opacity: 80%;
+}
+.app button:active{
+    opacity: 60%;
+}
+.app ul{
+    list-style-type: none;
+}
+.app ul li{
+    position: relative;
+    margin: 10px;
+    padding-left: 34px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.app ul li::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    width: 18px; 
+    height: 18px;
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%);
+
+}
+.app ul li::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    width: 18px; 
+    height: 18px;
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%);
+}
+span{
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    padding: 0px 8px 2px;
+    border-radius: 50%;
+    transition: all .1s ;
+}
+ul span:hover{
+    background-color: gray;
+}
+ul li.unactive::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    background-image: url("images/checked.png");
+    background-size: cover;
+    width: 18px; 
+    height: 18px;
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%);
+}
+
+ul li.unactive{
+    text-decoration: line-through;
+    opacity: 50%;
+}
